@@ -353,24 +353,38 @@
   })();
 
   // Switch between simple and full form based on URL parameter
-  (function () {
-    const params    = new URLSearchParams(window.location.search);
-    const system    = params.get('system');
-    const formSimple = document.getElementById('form-simple');
-    const formFull   = document.getElementById('form-full');
+(function () {
+  const params     = new URLSearchParams(window.location.search);
+  const system     = params.get('system');
+  const formSimple = document.getElementById('form-simple');
+  const formFull   = document.getElementById('form-full');
 
-    if (system) {
-      // Arriving from a build card — show simplified form
-      formSimple.style.display = 'block';
-      formFull.style.display   = 'none';
-      document.getElementById('system-name').textContent  = system;
-      document.getElementById('system-field').value       = system;
-    } else {
-      // Generic contact — show full form
-      formSimple.style.display = 'none';
-      formFull.style.display   = 'block';
-    }
-  })();
+  function disableInputs(container) {
+    container.querySelectorAll('input, select, textarea').forEach(function (el) {
+      el.disabled = true;
+    });
+  }
+
+  function enableInputs(container) {
+    container.querySelectorAll('input, select, textarea').forEach(function (el) {
+      el.disabled = false;
+    });
+  }
+
+  if (system) {
+    formSimple.style.display = 'block';
+    formFull.style.display   = 'none';
+    document.getElementById('system-name').textContent = system;
+    document.getElementById('system-field').value      = system;
+    enableInputs(formSimple);
+    disableInputs(formFull);
+  } else {
+    formSimple.style.display = 'none';
+    formFull.style.display   = 'block';
+    disableInputs(formSimple);
+    enableInputs(formFull);
+  }
+})();
 </script>
 
 </body>

@@ -140,7 +140,7 @@
           -->
 
           <form
-  action="https://formsubmit.co/YOUR_EMAIL_HERE"
+  action="https://formsubmit.co/jacobskrove@gmail.com"
   method="POST"
   id="contact-form"
 >
@@ -148,7 +148,7 @@
   <input type="hidden" name="_subject"  value="New inquiry — North Bridge PCs">
   <input type="hidden" name="_captcha"  value="false">
   <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next"     value="https://YOURUSERNAME.github.io/YOURREPO/contact.html?sent=true">
+  <input type="hidden" name="_next"     value="https://pcman369.github.io/North-Bridge-PCs-V4/contact.html?sent=true">
 
   <!-- Honeypot spam trap -->
   <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off">
@@ -314,28 +314,66 @@
   </footer>
 
 
-  <script>
-    // Mobile nav toggle
-    (function () {
-      const hamburger = document.getElementById('hamburger');
-      const mobileNav = document.getElementById('mobile-nav');
-
-      hamburger.addEventListener('click', function () {
-        const isOpen = hamburger.classList.toggle('open');
-        mobileNav.classList.toggle('open', isOpen);
-        hamburger.setAttribute('aria-expanded', isOpen);
+<script>
+  // Mobile nav toggle
+  (function () {
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', function () {
+      const isOpen = hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    mobileNav.querySelectorAll('.nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
       });
+    });
+  })();
 
-      mobileNav.querySelectorAll('.nav-link').forEach(function (link) {
-        link.addEventListener('click', function () {
-          hamburger.classList.remove('open');
-          mobileNav.classList.remove('open');
-          hamburger.setAttribute('aria-expanded', 'false');
-        });
-      });
-    })();
+  // Show thank-you message after submission
+  (function () {
+    if (window.location.search.indexOf('sent=true') !== -1) {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.innerHTML = `
+          <div style="text-align:center; padding:3rem 1rem;">
+            <div style="font-size:3rem; margin-bottom:1.25rem;">✅</div>
+            <h3 style="margin-bottom:0.75rem; font-size:1.3rem;">Message Sent</h3>
+            <p style="font-size:1rem; max-width:420px; margin:0 auto 2rem;">
+              Thanks for reaching out. I'll get back to you by email within a day or two.
+            </p>
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+          </div>
+        `;
+      }
+    }
+  })();
 
+  // Switch between simple and full form based on URL parameter
+  (function () {
+    const params    = new URLSearchParams(window.location.search);
+    const system    = params.get('system');
+    const formSimple = document.getElementById('form-simple');
+    const formFull   = document.getElementById('form-full');
 
+    if (system) {
+      // Arriving from a build card — show simplified form
+      formSimple.style.display = 'block';
+      formFull.style.display   = 'none';
+      document.getElementById('system-name').textContent  = system;
+      document.getElementById('system-field').value       = system;
+    } else {
+      // Generic contact — show full form
+      formSimple.style.display = 'none';
+      formFull.style.display   = 'block';
+    }
+  })();
+</script>
+
+  
     // ============================================================
     // SHOW A THANK-YOU MESSAGE IF REDIRECTED BACK AFTER SUBMIT
     // ============================================================

@@ -93,10 +93,10 @@ const builds = [
     ram:     "16GB DDR4 2666MHz",
     storage: "480GB SSD",
     fps: [
-      "Fortnite: ~100fps @ 1080p High"
-      "Minecraft: ~180fps+ @ 1080p High"
-      "Marvel Rivals: ~75fps @ 1080p High"
-      "Cyberpunk 2077: ~55fps @ 1080p High"
+      "Fortnite: ~100fps @ 1080p High",
+      "Minecraft: ~180fps+ @ 1080p High",
+      "Marvel Rivals: ~75fps @ 1080p High",
+      "Cyberpunk 2077: ~55fps @ 1080p High",
     ],
     price:   "$549",
     status:  "available"

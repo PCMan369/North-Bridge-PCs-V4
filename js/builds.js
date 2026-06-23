@@ -87,6 +87,20 @@
 
 const builds = [
 
+  {
+    title:   "Ryzen 5 3600 / RTX 2060",
+    image:   "images/3600_RTX2060.jpeg",
+    ram:     "16GB DDR4 2666MHz",
+    storage: "480GB SSD",
+    fps: [
+      "Fortnite: ~100fps @ 1080p High"
+      "Minecraft: ~180fps+ @ 1080p High"
+      "Marvel Rivals: ~75fps @ 1080p High"
+      "Cyberpunk 2077: ~55fps @ 1080p High"
+    ],
+    price:   "$549",
+    status:  "available"
+  },
   // ----------------------------------------------------------------
   // BUILD 1 — Entry-level 1080p system - SOLD
   // ----------------------------------------------------------------
@@ -94,7 +108,7 @@ const builds = [
     title:   "Ryzen 5 5500 / RTX 2070 Super",
     image:   "images/build-ryzen5500-rtx2070s.jpg",
     ram:     "16GB DDR4 3000MHz",
-    storage: "480GB SSD",
+    storage: "512GB NVMe SSD",
     fps: [
       "Fortnite: ~110fps @ 1080p High",
       "War Thunder: ~100fps @ 1080p High",

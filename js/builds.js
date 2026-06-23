@@ -117,8 +117,9 @@ const builds = [
     ],
     price:  "$599",
     status: "sold"
+  }
     // To mark sold, change "available" to "sold"
-  },
+  
 
   // ----------------------------------------------------------------
   // BUILD 4 — 

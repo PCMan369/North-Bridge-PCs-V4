@@ -106,14 +106,14 @@ const builds = [
       "Cyberpunk 2077: ~55fps @ 1080p High"
     ],
     photos: [
-      "images/3600_RTX2060.jpeg",
+      "images/3600_RTX2060.jpg",
       "images/3600_RTX2060_FRONT.jpg",
       "images/3600_RTX2060_SIDE.jpg",
       "images/3600_RTX2060_IO.jpg",
       "images/3600_RTX2060_BACK.jpg"
     ],
     price:  "$549",
-    status: "available"
+    status: "sold"
   },
 
   {
@@ -130,7 +130,7 @@ const builds = [
     photos: [
       "images/Website Main Pic.jpeg"
     ],
-    price:  "$599",
+    price:  "$649",
     status: "sold"
   }
 

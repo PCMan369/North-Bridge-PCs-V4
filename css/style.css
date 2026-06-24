@@ -768,7 +768,7 @@ strong {
 
 .build-image {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background-color: #0a1526;
 }

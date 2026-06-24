@@ -17,16 +17,23 @@
   on line ~75). Fill in each field.
 
   {
-    title:   "Ryzen 5 5600 / RTX 3060 12GB",
-    image:   "images/your-photo-filename.jpg",
-    ram:     "16GB DDR4 3200MHz",
-    storage: "500GB NVMe SSD",
+    title:   "Ryzen 5 3600 / RTX 2060",
+    image:   "images/3600_RTX2060.jpeg",
+    ram:     "16GB DDR4 2666MHz",
+    storage: "480GB SSD",
     fps: [
-      "Fortnite: ~110fps @ 1080p High",
-      "War Thunder: ~100fps @ 1080p High"
+      "Fortnite: ~100fps @ 1080p High",
+      "Minecraft: ~180fps+ @ 1080p High",
+      "Marvel Rivals: ~75fps @ 1080p High",
+      "Cyberpunk 2077: ~55fps @ 1080p High"
     ],
-    price:   "$649",
-    status:  "available"
+    photos: [
+      "images/3600_RTX2060.jpeg",
+      "images/3600_RTX2060_side.jpeg",
+      "images/3600_RTX2060_inside.jpeg"
+    ],
+    price:  "$549",
+    status: "available"
   },
 
   ================================================================
@@ -89,7 +96,7 @@ const builds = [
 
   {
     title:   "Ryzen 5 3600 / RTX 2060",
-    image:   "images/3600_RTX2060.jpg",
+    image:   "images/3600_RTX2060.jpeg",
     ram:     "16GB DDR4 2666MHz",
     storage: "480GB SSD",
     fps: [
@@ -97,6 +104,11 @@ const builds = [
       "Minecraft: ~180fps+ @ 1080p High",
       "Marvel Rivals: ~75fps @ 1080p High",
       "Cyberpunk 2077: ~55fps @ 1080p High"
+    ],
+    photos: [
+      "images/3600_RTX2060.jpeg",
+      "images/3600_RTX2060_side.jpeg",
+      "images/3600_RTX2060_inside.jpeg"
     ],
     price:  "$549",
     status: "available"
@@ -112,6 +124,9 @@ const builds = [
       "War Thunder: ~100fps @ 1080p High",
       "Apex Legends: ~130fps @ 1080p High",
       "Minecraft Java: ~200fps+"
+    ],
+    photos: [
+      "images/Website Main Pic.jpg"
     ],
     price:  "$599",
     status: "sold"

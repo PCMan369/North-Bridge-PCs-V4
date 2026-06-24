@@ -96,7 +96,7 @@ const builds = [
 
   {
     title:   "Ryzen 5 3600 / RTX 2060",
-    image:   "images/3600_RTX2060.jpeg",
+    image:   "images/3600_RTX2060.jpg",
     ram:     "16GB DDR4 2666MHz",
     storage: "480GB SSD",
     fps: [
@@ -107,8 +107,10 @@ const builds = [
     ],
     photos: [
       "images/3600_RTX2060.jpeg",
-      "images/3600_RTX2060_side.jpeg",
-      "images/3600_RTX2060_inside.jpeg"
+      "images/3600_RTX2060_FRONT.jpg",
+      "images/3600_RTX2060_SIDE.jpg",
+      "images/3600_RTX2060_IO.jpg",
+      "images/3600_RTX2060_BACK.jpg"
     ],
     price:  "$549",
     status: "available"
@@ -126,7 +128,7 @@ const builds = [
       "Minecraft Java: ~200fps+"
     ],
     photos: [
-      "images/Website Main Pic.jpg"
+      "images/Website Main Pic.jpeg"
     ],
     price:  "$599",
     status: "sold"

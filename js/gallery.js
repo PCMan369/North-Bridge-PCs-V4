@@ -69,15 +69,7 @@ const currentBuilds = [
   // ----------------------------------------------------------------
 
   
-  {
-    src: "images/3600_RTX2060.jpg",
-    alt: "Ryzen 5 3600 / RTX 2060 build — currently being built"
-  },
-
-  {
-    src: "images/3600_RTX2060_FRONT.jpg",
-    alt: "Ryzen 5 3600 / RTX 2060 build — currently being built"
-  }
+  
   
 
   // ----------------------------------------------------------------
@@ -107,15 +99,36 @@ const completedBuilds = [
   // Add your completed build photos here.
   // ----------------------------------------------------------------
 
-  {
-    src: "images/Website Main Pic.jpeg",
-    alt: "Completed Build — Ryzen 5 5500 / RTX 2070 Super"
+{
+    src: "images/3600_RTX2060.jpg",
+    alt: "Ryzen 5 3600 / RTX 2060 build — previously sold"
   },
 
   {
-    src: "images/5500_RTX2070S.jpg",
-    alt: "Completed Build — Ryzen 5 5500 / RTX 2070 Super"
+    src: "images/3600_RTX2060_FRONT.jpg",
+    alt: "Ryzen 5 3600 / RTX 2060 build — previously sold"
+  },
+
+  {
+    src: "images/3600_RTX2060_SIDE.jpg",
+    alt: "Ryzen 5 3600 / RTX 2060 build — previously sold"
+  },
+
+  {
+    src: "images/3600_RTX2060_IO.jpg",
+    alt: "Ryzen 5 3600 / RTX 2060 build — previously sold"
+  },
+
+  {
+    src: "images/3600_RTX2060_BACK.jpg",
+    alt: "Ryzen 5 3600 / RTX 2060 build — previously sold"
+  },
+  
+  {
+    src: "images/Website Main Pic.jpeg",
+    alt: "Ryzen 5 5500 / RTX 2070 Super build - previously sold"
   }
+
 ];
 
 
